@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "thunder";
+  src: url("./fonts/Thunder-BoldLC.woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "thunder";
+  src: url("./fonts/Thunder-BlackLC.woff2");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "thunder";
+  src: url("./fonts/Thunder-BlackHC.woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "thunder";
+  src: url("./fonts/Thunder-LC.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "thunder";
+  src: url("./fonts/Thunder-LightLC.woff2");
+  font-weight: 300;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::backdrop,
+*::after {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "thunder", sans-serif;
+  font-family: panchang, sans-serif;
+  background-color: #2d2a2b;
+  color: #f2eee7;
+  font-size: 1.4rem;
+  overflow: hidden;
+}
+.color-1 {
+  background-color: #f2eee7;
+}
+.color-2 {
+  background-color: #2d2a2b;
+}
+.color-3 {
+  background-color: #978568;
+}
+.color-4 {
+  background-color: #1e1f1e;
+}
+.hero {
+  height: 90vh;
+  /* border: 1px solid red; */
+  padding: clamp(1rem, 4rem, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid red; */
+  height: 10vh;
+  padding: 2rem 2rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 60%;
+  /* border: 1px solid red; */
+}
+
+h1,
+.container > p {
+  /* font-size: 8rem; */
+  font-size: clamp(2rem, 7vw, 10rem);
+  font-weight: 900;
+  letter-spacing: 1rem;
+}
+.container > h1 {
+  -webkit-text-stroke: 1px #f2eee7;
+  -webkit-text-fill-color: #2d2a2b;
+}
+
+@media only screen and (max-width: 400px) {
+  .hero {
+    padding: 1rem;
+  }
+}
