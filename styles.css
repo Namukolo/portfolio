@@ -70,7 +70,7 @@ body {
   background-color: #1e1f1e;
 }
 .hero {
-  height: 100vh;
+  height: 110vh;
   /* border: 1px solid red; */
   /* padding: clamp(1rem, 4rem, 5rem);/ */
   padding: 4rem;
@@ -95,7 +95,7 @@ nav ul {
   /* border: 1px solid red; */
 }
 .container {
-  transform: translateY(-12rem);
+  transform: translateY(-10rem);
 }
 
 h1,
@@ -110,18 +110,48 @@ h1,
   -webkit-text-fill-color: #2d2a2b;
 }
 
-.about {
+.about,
+.projects,
+.contact {
   background-color: #f2eee7;
   color: #2d2a2b;
-  height: 100vh;
+  height: 160vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 4rem;
   margin-top: -10rem;
-  clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
-}
 
+  clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
+  /* border: 1px solid red; */
+}
+.projects {
+  background-color: #2d2a2b;
+  color: #f2eee7;
+  margin-top: -50vh;
+  /* background-color: #2d2a2b;
+  background-color: blue;
+  color: #f2eee7;
+  color: red;
+  z-index: 3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  clip-path: polygon(0 27%, 100% 0, 100% 100%, 0% 100%);
+  border: 10px solid green;
+  margin-top: -30vh; */
+}
+.contact i {
+  color: #2d2a2b;
+  font-size: clamp(3rem, 3vw, 4rem);
+}
+.socials ul {
+  display: flex;
+  list-style-type: none;
+  gap: 4rem;
+}
 @media only screen and (max-width: 400px) {
   nav {
     width: 100%;
@@ -147,6 +177,14 @@ h1,
     /* clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%); */
     clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
     line-height: 2.5rem;
+    height: 120vh;
     /* letter-spacing: 0.1srem; */
+  }
+  .projects {
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -25vh;
+  }
+  .contact {
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
   }
 }
