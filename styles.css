@@ -56,7 +56,7 @@ html {
 .header{
 background: url('grass.jpg');
 background-size: cover;
-background-color: rgb(7, 7, 7);
+background-color: rgba(7, 7, 7,0.95);
 background-blend-mode: overlay;
 height: 120vh;
 font-size: 9rem;
