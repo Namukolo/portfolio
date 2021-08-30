@@ -53,11 +53,13 @@ html {
 }
 
 .header{
-background: url('grass.jpg');
+  background: url('grass.jpg');
+
 background-size: cover;
 background-color: rgba(7, 7, 7,0.95);
+
 background-blend-mode: overlay;
-height: 120vh;
+height: 100vh;
 font-size: 9rem;
 padding: 3rem;
 }
@@ -124,17 +126,41 @@ h1,
 }
 .about{
   background-color:white;
-  color: black;
+  color: white;
+  background: url('water.jpg');
+background-size: cover;
+background-color: rgba(7, 7, 7,0.95);
+
+/* background-color: rgba(7, 7, 7,0.95);
+background-color: rgba(218, 133, 7, 0.95); */
+
+background-blend-mode: overlay;
 }
 .projects {
   background-color: black;
   color: #f2eee7;
   display: flex;
   flex-direction: column;
+  background: url('water.jpg');
+background: url('grass.jpg');
+
+background-size: cover;
+background-blend-mode: overlay;
+background-color: rgba(7, 7, 7,0.95);
+
 }
 .projects h2{
   margin-bottom: 5rem;
   font-size: 3rem;
+}
+.contact{
+  background: url('water.jpg');
+background-size: cover;
+background-color: rgba(7, 7, 7,0.95);
+background-color: rgba(197, 191, 191, 0.95);
+
+
+background-blend-mode: overlay;
 }
 .contact i {
   color: #2d2a2b;
@@ -168,6 +194,7 @@ input{
   border-bottom: 1px solid black;
   font-family: panchang, sans-serif;
   color: black;
+  /* opacity: 0.5; */
 }
 ::placeholder{
   color: black;
