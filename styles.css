@@ -45,7 +45,10 @@ body {
   font-family: "thunder", sans-serif;
   font-family: panchang, sans-serif;
   background-color: #2d2a2b;
+  /* background-color: red; */
   color: #f2eee7;
+  color: white;
+  /* color: red; */
   font-size: 1.4rem;
   /* overflow: hidden; */
 }
@@ -77,6 +80,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
+}
+.noise{
+  width: 100%;
+  height: 100vh;
+  background: url('floor.jpg');
+  mix-blend-mode: overlay;
 }
 nav {
   /* border: 1px solid red; */
@@ -152,6 +162,65 @@ h1,
   list-style-type: none;
   gap: 4rem;
 }
+.contact-container{
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  font-size: 3rem;
+}
+.right{
+  width: 50%;
+}
+
+form{
+  /* border: 1px solid red; */
+}
+input{
+  display: block;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 100%;
+  border-bottom: 1px solid black;
+  font-family: panchang, sans-serif;
+  color: black;
+}
+::placeholder{
+  color: black;
+  font-weight: 500;
+}
+textarea{
+  width: 100%;
+  border: 1px solid black;
+  padding: 2rem;
+  font-family: panchang, sans-serif;
+
+}
+button{
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 3rem;
+  margin-top: 3rem;
+  background-color:#2d2a2b;
+  color: white;
+  font-family: panchang, sans-serif;
+  letter-spacing: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 400px) {
   nav {
     width: 100%;
@@ -184,7 +253,12 @@ h1,
     clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
     margin-top: -25vh;
   }
+  
   .contact {
     clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+    
+  }
+  .contact-container{
+    border: 1px solid red;
   }
 }
